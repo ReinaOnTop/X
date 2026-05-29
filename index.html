@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+
+<div class="join-screen" id="joinScreen">
+
+    <h1>X</h1>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="text" id="room" placeholder="Room Code">
+
+    <button id="joinBtn">
+        Join Room
+    </button>
+
+</div>
+
+<div class="chat-screen hidden" id="chatScreen">
+
+    <div class="topbar">
+        X Chat
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="input-area">
+
+        <input type="text" id="messageInput" placeholder="Message...">
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <button id="sendBtn">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
